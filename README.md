@@ -33,7 +33,7 @@
 #### Tab. 3: Performance on Egoplan2 under partial occlusion of the interaction region.
 
 ### R3-Q1 (Fig.2)
-![time](fig\reward_normal_noisy.png)
+![reward](fig\reward_normal_noisy.png)
 
 ## Reviewer oZZ4
 ### R4-Q3 (Tab.4)
