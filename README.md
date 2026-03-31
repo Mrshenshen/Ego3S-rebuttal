@@ -23,8 +23,8 @@
 | Method | Accuracy (%) | Mean IoU |
 | :--- | :---: | :---: |
 | Random Crop | 18.0 | 0.07 |
-| Center Crop | 33.0 | 0.15 |
-| **CLIP-based (Ours)** | **82.0** | **0.74** |
+| Center Crop | 27.0 | 0.15 |
+| **CLIP-based (Ours)** | **82.0** | **0.58** |
 #### Tab.2: Comparison of interaction-region selection methods on 100 manually annotated samples. Accuracy denotes the percentage of samples for which the selected region correctly localizes the interaction region, while Mean IoU measures the average overlap between the selected region and the ground-truth annotation.
 .
 ### R3-Q1 (Tab.3)
@@ -41,16 +41,16 @@
 ![reward](fig\reward_normal_noise.png)
 
 ## <span style="color:blue;">Reviewer oZZ4</span>
-### R4-Q3 (Tab.4)(dai)
+### R4-Q3 (Tab.4)
 
 | Training Stage | Method | Proportion of CAWR Instances (%) ↓ |
 | :--- | :--- | :---: |
-| Initial (Step 0) | Pre-trained Base Model | 14.6% |
-| Mid-Training (Step 300) | GRPO Baseline | 18.2% |
-| Mid-Training (Step 300) | **Ego3S (IRL with (r_p))** | **8.4%** |
-| Final (Step 600) | GRPO Baseline | 21.5% |
-| Final (Step 600) | **Ego3S (IRL with (r_p))** | **4.2%** |
-#### Tab.4: Proportion of “Correct Answer, Wrong Reason” (CAWR) cases across training stages, evaluated by GPT-4o on a random subset of 3,000 training samples. Lower is better.
+| Initial (Step 0) | Qwen2.5-VL-7b | 27.1% |
+| Mid-Training (Step 300) | Ego3S (IRL without ($r_p$)) | 18.9% |
+| Mid-Training (Step 300) | **Ego3S (IRL with ($r_p$))** | **17.4%** |
+| Final (Step 600) | GRPO | 20.5% |
+| Final (Step 600) | **Ego3S (IRL with (r_p))** | **13.2%** |
+#### Tab.4: Proportion of “Correct Answer, Wrong Reason” (CAWR) cases across training stages, evaluated by GPT-5.4 on a random subset of 3,000 training samples. Lower is better.
 
 
 
